@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadoo - Travel Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav-logo">Jadoo</a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#services">Destinations</a></li>
+        <li><a href="#destinations">Hotels</a></li>
+        <li><a href="#steps">Flights</a></li>
+        <li><a href="#testimonials">Bookings</a></li>
+      </ul>
+
+      <div class="nav-actions" id="navActions">
+        <a href="#" class="nav-login">Login</a>
+        <a href="#" class="btn-signup">Sign up</a>
+        <span class="nav-lang">EN <i class="fa-solid fa-chevron-down fa-xs"></i></span>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="hero-tag">Best Destinations around the world</span>
+      <h1>
+        Travel, <span class="highlight">enjoy</span><br>
+        and live a new<br>
+        and full life
+      </h1>
+      <p>
+        Built Wicket longer admire do barton vanity itself do in it.
+        Preferred to sportsmen it engrossed listening. Pork gate
+        sell they west hard for the.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">
+          Find out more
+        </button>
+        <button class="btn-play" id="playBtn">
+          <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+          Play Demo
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img src="images/Decore.png" alt="" class="hero-decore" aria-hidden="true" />
+      <img src="images/Image.png" alt="Happy traveler with backpack and suitcase" class="hero-person" />
+      <svg class="plane p1" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,20 55,0 80,20 55,26" fill="#59B2D8"/>
+        <polygon points="25,20 35,36 55,26" fill="#59B2D8" opacity="0.6"/>
+      </svg>
+      <svg class="plane p2" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,20 55,0 80,20 55,26" fill="#59B2D8"/>
+        <polygon points="25,20 35,36 55,26" fill="#59B2D8" opacity="0.6"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">CATEGORY</span>
+        <h2>We Offer Best Services</h2>
+      </div>
+
+      <div class="services-row">
+        <div class="service-card">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="Weather icon" />
+          </div>
+          <h4>Calculated Weather</h4>
+          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+        </div>
+
+        <div class="service-card featured">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1062/1062672.png" alt="Flight icon" />
+          </div>
+          <h4>Best Flights</h4>
+          <p>Engrossed listening. Pork gate sell they west hard for the.</p>
+          <div class="featured-blob"></div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3659/3659899.png" alt="Events icon" />
+          </div>
+          <h4>Local Events</h4>
+          <p>Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" alt="Settings icon" />
+          </div>
+          <h4>Customization</h4>
+          <p>We deliver outsourced aviation services for military customers</p>
+        </div>
+      </div>
+
+      <div class="dots-right" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">Top Selling</span>
+        <h2>Top Destinations</h2>
+      </div>
+
+      <div class="dest-row">
+        <div class="dest-card">
+          <img src="images/rome.jpg" alt="Colosseum in Rome, Italy" />
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-name">Rome, Italy</span>
+              <span class="dest-price">$5.42k</span>
+            </div>
+            <p class="dest-duration">
+              <i class="fa-solid fa-location-arrow"></i>
+              10 Days Trip
+            </p>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <img src="images/London.jpeg" alt="Big Ben clock tower in London" />
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-name">London, UK</span>
+              <span class="dest-price">$4.2k</span>
+            </div>
+            <p class="dest-duration">
+              <i class="fa-solid fa-location-arrow"></i>
+              12 Days Trip
+            </p>
+          </div>
+        </div>
+
+        <div class="dest-card">
+          <img src="images/switzerland.jpg" alt="Beautiful Swiss landscape" />
+          <div class="dest-info">
+            <div class="dest-meta">
+              <span class="dest-name">Switzerland</span>
+              <span class="dest-price">$7.5k</span>
+            </div>
+            <p class="dest-duration">
+              <i class="fa-solid fa-location-arrow"></i>
+              14 Days Trip
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="steps">
+    <div class="container steps-wrap">
+      <div class="steps-left">
+        <span class="label">Easy and Fast</span>
+        <h2>Book Your Next Trip<br>In 3 Easy Steps</h2>
+
+        <ul class="steps-list">
+          <li>
+            <div class="step-num orange"><i class="fa-solid fa-tv"></i></div>
+            <div class="step-text">
+              <h4>Choose Destination</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num coral"><i class="fa-solid fa-wallet"></i></div>
+            <div class="step-text">
+              <h4>Make Payment</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num teal"><i class="fa-solid fa-suitcase-rolling"></i></div>
+            <div class="step-text">
+              <h4>Reach Airport on Selected Date</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="steps-right">
+        <div class="card-glow"></div>
+
+        <div class="trip-card">
+          <img src="images/greece-trip.jpg" alt="View of Santorini, Greece" />
+          <div class="trip-details">
+            <p class="trip-title">Trip To Greece</p>
+            <p class="trip-sub">14-29 June &nbsp;|&nbsp; by Robbin jo</p>
+            <div class="trip-actions">
+              <button><i class="fa-solid fa-leaf"></i></button>
+              <button><i class="fa-regular fa-image"></i></button>
+              <button><i class="fa-solid fa-location-arrow"></i></button>
+            </div>
+            <div class="trip-footer">
+              <span><i class="fa-regular fa-user"></i> 24 people going</span>
+              <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ongoing">
+          <img src="images/rome-thumb.jpg" alt="Rome thumbnail" />
+          <div class="ongoing-info">
+            <span>Ongoing</span>
+            <p>Trip to rome</p>
+            <div class="progress"><div class="progress-bar" style="width: 40%"></div></div>
+            <small>40% completed</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container testi-wrap">
+      <div class="testi-left">
+        <span class="label">TESTIMONIALS</span>
+        <h2>What People Say<br>About Us.</h2>
+        <div class="testi-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+
+      <div class="testi-right">
+        <div class="testi-card open">
+          <img src="images/mike.jpg" alt="Mike Taylor" />
+          <div class="testi-content">
+            <p>"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
+            <div class="testi-person">
+              <strong>Mike Taylor</strong>
+              <span>Lahore, Pakistan</span>
+            </div>
+          </div>
+          <button class="testi-arrow up"><i class="fa-solid fa-chevron-up"></i></button>
+        </div>
+
+        <div class="testi-card closed">
+          <div class="testi-person">
+            <strong>Chris Thomas</strong>
+            <span>CEO of Red Button</span>
+          </div>
+          <button class="testi-arrow down"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands">
+    <div class="container brands-row">
+      <span class="brand axon">axon<br><small>airlines</small></span>
+      <span class="brand jetstar">Jetstar<i class="fa-solid fa-star fa-xs" style="color:#e31837"></i></span>
+      <span class="brand expedia"><i class="fa-solid fa-globe" style="color:#1c449b"></i> Expedia</span>
+      <span class="brand qantas" style="letter-spacing:2px;">QANTAS</span>
+      <span class="brand alitalia"><em>Alitalia</em></span>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <div class="container">
+      <div class="sub-box">
+        <div class="sub-plane-icon" aria-hidden="true">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <h2>Subscribe to get information, latest news and other<br>interesting offers about Jadoo</h2>
+        <div class="sub-form">
+          <div class="sub-field">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Your email" id="subEmail" />
+          </div>
+          <button class="btn-subscribe" id="subBtn">Subscribe</button>
+        </div>
+      </div>
+      <div class="dots-right sub-dots" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h2 class="footer-logo">Jadoo.</h2>
+        <p>Book your trip in minute, get full<br>Control for much longer.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Mobile</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Help/FAQ</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#">Airlinefees</a></li>
+          <li><a href="#">Airline</a></li>
+          <li><a href="#">Low fare tips</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-app">
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" class="insta"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p class="app-title">Discover our app</p>
+        <div class="app-badges">
+          <a href="#" class="badge-btn">
+            <i class="fa-brands fa-google-play"></i>
+            <div><small>GET IT ON</small><strong>Google Play</strong></div>
+          </a>
+          <a href="#" class="badge-btn">
+            <i class="fa-brands fa-apple"></i>
+            <div><small>Available on the</small><strong>App Store</strong></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>All rights reserved@jadoo.co</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
