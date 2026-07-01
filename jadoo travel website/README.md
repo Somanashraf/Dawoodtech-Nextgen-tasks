@@ -5,8 +5,8 @@ A clean, responsive travel agency landing page built with plain HTML, CSS, and J
 ---
 
 ## Preview
-(<img width="947" height="436" alt="image" src="https://github.com/user-attachments/assets/3eb069b4-2e6f-4de1-b457-1cc73897c190" />
-)
+<img width="947" height="436" alt="image" src="https://github.com/user-attachments/assets/3eb069b4-2e6f-4de1-b457-1cc73897c190" />
+
 
 ---
 
