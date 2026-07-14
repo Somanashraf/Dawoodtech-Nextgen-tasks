@@ -7,7 +7,7 @@ No Bootstrap, no Tailwind, no JavaScript frameworks — pure semantic HTML and c
 
 ## 🚀 Live Demo
 
-> [Add your live URL here after deploying to GitHub Pages / Netlify / Vercel]
+https://savoriarestaurantlandingpage.vercel.app/
 
 ---
 
