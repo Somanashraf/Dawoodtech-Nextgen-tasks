@@ -14,27 +14,26 @@ No Bootstrap, no Tailwind, no JavaScript frameworks — pure semantic HTML and c
 ## 📸 Screenshots
 
 ### 🖥️ Desktop View
-<img src="screenshots/desktop.png" width="800" alt="Savoria Desktop View" />
+<img src="screenshots/desktop.png" width="600" alt="Savoria — Desktop View (1440px)" />
+
+---
 
 ### 📱 Mobile View
-<img src="screenshots/mobile-1.png" width="250" alt="Savoria Mobile View 1" /> <img src="screenshots/mobile-2.png" width="250" alt="Savoria Mobile View 2" />
 
-### 📄 Sections Preview
+| Mobile View 1 | Mobile View 2 |
+|:---:|:---:|
+| <img src="screenshots/mobile-1.png" width="200" alt="Mobile View 1" /> | <img src="screenshots/mobile-2.png" width="200" alt="Mobile View 2" /> |
+| *Portrait — Top Sections* | *Portrait — Bottom Sections* |
 
-<table>
-  <tr>
-    <td><img src="screenshots/section-1.png" width="380" alt="Hero Section" /><br/><sub>Hero Section</sub></td>
-    <td><img src="screenshots/section-2.png" width="380" alt="Special Dishes" /><br/><sub>Special Dishes</sub></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/section-3.png" width="380" alt="About Section" /><br/><sub>About Section</sub></td>
-    <td><img src="screenshots/section-4.png" width="380" alt="Services Section" /><br/><sub>Services Section</sub></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/section-5.png" width="380" alt="Testimonials" /><br/><sub>Testimonials</sub></td>
-    <td><img src="screenshots/section-6.png" width="380" alt="Footer" /><br/><sub>Newsletter &amp; Footer</sub></td>
-  </tr>
-</table>
+---
+
+### 📄 Section-by-Section Preview
+
+| | |
+|:---:|:---:|
+| <img src="screenshots/section-1.png" width="360" alt="Hero Section" /><br/>**1. Hero Section** | <img src="screenshots/section-2.png" width="360" alt="Signature Dishes" /><br/>**2. Signature Dishes** |
+| <img src="screenshots/section-3.png" width="360" alt="About Section" /><br/>**3. About / Welcome** | <img src="screenshots/section-4.png" width="360" alt="Services Section" /><br/>**4. Services** |
+| <img src="screenshots/section-5.png" width="360" alt="Testimonials" /><br/>**5. Guest Testimonials** | <img src="screenshots/section-6.png" width="360" alt="Newsletter and Footer" /><br/>**6. Newsletter & Footer** |
 
 ---
 
