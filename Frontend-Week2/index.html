@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Savoria Restaurant — Crafting exceptional dining experiences since 2010. Explore our signature dishes, meet our expert chefs, and reserve your table today."
+    />
+    <meta name="keywords" content="restaurant, fine dining, signature dishes, chef, book a table, food, savoria" />
+    <meta name="author" content="Savoria Restaurant" />
+    <title>Savoria — Fine Dining &amp; Exceptional Flavors</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+      <nav class="navbar" aria-label="Main navigation">
+
+        <!-- Brand logo -->
+        <div class="nav-logo">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="13" cy="22" rx="11" ry="11" fill="#E8792A"/>
+              <ellipse cx="27" cy="22" rx="11" ry="11" fill="#E8792A" opacity="0.65"/>
+              <circle cx="20" cy="10" r="6" fill="#E8792A" opacity="0.85"/>
+            </svg>
+          </div>
+          <span class="logo-text">Savoria</span>
+        </div>
+
+        <!-- CSS-only mobile toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" />
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" role="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigation links -->
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#menu"         class="nav-link">Menu</a></li>
+          <li><a href="#about"        class="nav-link">About</a></li>
+          <li><a href="#services"     class="nav-link">Services</a></li>
+          <li><a href="#chef"         class="nav-link">Our Chef</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact"      class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary nav-cta">Book a Table</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- ===================== HERO SECTION ===================== -->
+      <section class="hero" id="hero" aria-label="Hero section">
+
+        <div class="hero-content">
+
+          <!-- Circular rotating badge -->
+          <div class="hero-badge" aria-label="Fresh and Delicious food">
+            <svg class="circular-text" viewBox="0 0 120 120">
+              <defs>
+                <path id="circle-path"
+                  d="M 60,60 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0"
+                  fill="none"/>
+              </defs>
+              <text font-size="11.5" fill="#333" font-family="Inter, sans-serif" letter-spacing="2">
+                <textPath href="#circle-path">
+                  FRESH • DELICIOUS • CRAFTED •&nbsp;
+                </textPath>
+              </text>
+            </svg>
+          </div>
+
+          <h1 class="hero-heading">
+            We craft the<br />
+            <span>finest flavors for you</span>
+          </h1>
+
+          <p class="hero-desc">
+            From farm-fresh ingredients to expertly crafted plates, every dish
+            at Savoria tells a story. Come experience dining that feeds both
+            your appetite and your soul.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu"    class="btn btn-dark">Explore Menu</a>
+            <a href="#contact" class="btn btn-primary">Book a Table</a>
+          </div>
+
+          <div class="hero-social" aria-label="Follow us on social media">
+            <a href="#" class="social-link" aria-label="Follow Savoria on Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow Savoria on Instagram" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow Savoria on Twitter" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero images -->
+        <div class="hero-visual">
+          <div class="hero-img-frame">
+            <img
+              src="images/hero-restaurant.png"
+              alt="Savoria's warm and elegant dining room interior"
+              class="hero-restaurant-img"
+              loading="eager"
+            />
+          </div>
+          <div class="hero-food-float">
+            <img
+              src="images/hero-food.png"
+              alt="Savoria signature salad dish beautifully plated"
+              class="hero-food-img"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Decorative SVG herb outlines -->
+          <div class="deco-herb deco-herb-top"   aria-hidden="true"></div>
+          <div class="deco-herb deco-herb-right" aria-hidden="true"></div>
+        </div>
+
+        <!-- Background arc lines -->
+        <div class="hero-bg-arcs" aria-hidden="true">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="260" r="200" fill="none" stroke="#e2e2e2" stroke-width="1"/>
+            <circle cx="60" cy="260" r="260" fill="none" stroke="#ebebeb" stroke-width="1"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ===================== FEATURES — SPECIAL DISHES ===================== -->
+      <section class="features" id="menu" aria-labelledby="dishes-title">
+        <div class="container">
+
+          <div class="section-header">
+            <h2 class="section-title" id="dishes-title">Our Signature Dishes</h2>
+            <p class="section-subtitle">
+              Handpicked favorites crafted with passion — each dish is a blend
+              of bold flavors, fresh produce, and culinary artistry.
+            </p>
+          </div>
+
+          <div class="dishes-grid">
+
+            <!-- Dish 1 -->
+            <article class="dish-card" tabindex="0">
+              <div class="dish-img-wrap">
+                <img
+                  src="images/dish-spring-rolls.png"
+                  alt="Crispy Golden Spring Rolls served with a tangy plum dipping sauce"
+                  class="dish-img"
+                  loading="lazy"
+                />
+                <span class="dish-price" aria-label="Price: $12">$12</span>
+              </div>
+              <div class="dish-info">
+                <h3 class="dish-name">Crispy Spring Rolls</h3>
+                <p class="dish-desc">
+                  Golden-fried rolls stuffed with seasoned vegetables and
+                  glass noodles, served with our house tangy plum sauce.
+                </p>
+              </div>
+            </article>
+
+            <!-- Dish 2 -->
+            <article class="dish-card" tabindex="0">
+              <div class="dish-img-wrap">
+                <img
+                  src="images/dish-salmon.png"
+                  alt="Pan-seared salmon fillet with steamed seasonal vegetables"
+                  class="dish-img"
+                  loading="lazy"
+                />
+                <span class="dish-price" aria-label="Price: $18">$18</span>
+              </div>
+              <div class="dish-info">
+                <h3 class="dish-name">Seared Salmon &amp; Greens</h3>
+                <p class="dish-desc">
+                  Atlantic salmon fillet pan-seared to perfection, plated
+                  with steamed seasonal greens and a lemon herb drizzle.
+                </p>
+              </div>
+            </article>
+
+            <!-- Dish 3 -->
+            <article class="dish-card" tabindex="0">
+              <div class="dish-img-wrap">
+                <img
+                  src="images/dish-tofu.png"
+                  alt="Spicy tofu stir-fry with peppers and aromatic chili sauce"
+                  class="dish-img"
+                  loading="lazy"
+                />
+                <span class="dish-price" aria-label="Price: $14">$14</span>
+              </div>
+              <div class="dish-info">
+                <h3 class="dish-name">Spicy Tofu Stir-Fry</h3>
+                <p class="dish-desc">
+                  Silken tofu tossed in a fiery chili-garlic sauce with
+                  bell peppers and fresh basil — a bold vegetarian delight.
+                </p>
+              </div>
+            </article>
+
+            <!-- Dish 4 -->
+            <article class="dish-card" tabindex="0">
+              <div class="dish-img-wrap">
+                <img
+                  src="images/dish-egg-bowl.png"
+                  alt="Egg and avocado rice bowl topped with fresh cucumber ribbons"
+                  class="dish-img"
+                  loading="lazy"
+                />
+                <span class="dish-price" aria-label="Price: $13">$13</span>
+              </div>
+              <div class="dish-info">
+                <h3 class="dish-name">Egg &amp; Avocado Bowl</h3>
+                <p class="dish-desc">
+                  A nourishing bowl of jasmine rice topped with a sunny-side
+                  egg, creamy avocado slices, and crisp cucumber ribbons.
+                </p>
+              </div>
+            </article>
+
+          </div><!-- /dishes-grid -->
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT SECTION ===================== -->
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="about-grid">
+
+            <div class="about-visual">
+              <img
+                src="images/about-food.png"
+                alt="Savoria's signature fresh salad — vibrant colors, bold flavors"
+                class="about-img"
+                loading="lazy"
+              />
+              <span class="leaf leaf-1" aria-hidden="true">🌿</span>
+              <span class="leaf leaf-2" aria-hidden="true">🍃</span>
+              <span class="leaf leaf-3" aria-hidden="true">🌿</span>
+            </div>
+
+            <div class="about-content">
+              <h2 class="section-title" id="about-title">
+                Welcome to<br />Savoria Restaurant
+              </h2>
+              <p class="about-desc">
+                Founded in 2010, Savoria was born from a simple belief — that
+                great food should bring people together. Nestled in the heart
+                of the city, we blend traditional recipes with modern culinary
+                techniques to deliver an unforgettable dining experience.
+              </p>
+              <p class="about-desc about-desc--secondary">
+                Every ingredient is locally sourced, every recipe
+                perfected over years, and every plate crafted with care.
+                Whether it's a quiet dinner for two or a celebration with
+                family, we make every visit special.
+              </p>
+              <div class="about-buttons">
+                <a href="#menu"    class="btn btn-dark">View Menu</a>
+                <a href="#contact" class="btn btn-primary">Book a Table</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SERVICES — CHEF SECTION ===================== -->
+      <section class="chef" id="chef" aria-labelledby="chef-title">
+        <div class="container">
+          <div class="chef-grid">
+
+            <div class="chef-content">
+              <h2 class="section-title" id="chef-title">Meet Our Expert Chef</h2>
+              <p class="chef-desc">
+                Chef Marco Rivera brings over 20 years of culinary mastery
+                to every plate at Savoria. Trained in Paris and seasoned
+                across three continents, his philosophy is simple — cook
+                with heart, serve with pride.
+              </p>
+
+              <!-- Chef / services highlights — 6 items in 2-col layout -->
+              <ul class="chef-features" role="list" aria-label="Chef highlights and specialties">
+                <li class="chef-feature-item">
+                  <i class="fas fa-check-circle check-icon" aria-hidden="true"></i>
+                  <span>Trained at Le Cordon Bleu, Paris</span>
+                </li>
+                <li class="chef-feature-item">
+                  <i class="fas fa-check-circle check-icon" aria-hidden="true"></i>
+                  <span>20+ years of culinary experience</span>
+                </li>
+                <li class="chef-feature-item">
+                  <i class="fas fa-check-circle check-icon" aria-hidden="true"></i>
+                  <span>Specializes in fusion cuisine</span>
+                </li>
+                <li class="chef-feature-item">
+                  <i class="fas fa-check-circle check-icon" aria-hidden="true"></i>
+                  <span>Award-winning seasonal menus</span>
+                </li>
+                <li class="chef-feature-item">
+                  <i class="fas fa-check-circle check-icon" aria-hidden="true"></i>
+                  <span>Farm-to-table ingredient sourcing</span>
+                </li>
+                <li class="chef-feature-item">
+                  <i class="fas fa-check-circle check-icon" aria-hidden="true"></i>
+                  <span>Custom menus for private events</span>
+                </li>
+              </ul>
+
+              <div class="chef-buttons">
+                <a href="#menu"    class="btn btn-dark">View Menu</a>
+                <a href="#contact" class="btn btn-primary">Book a Table</a>
+              </div>
+            </div>
+
+            <div class="chef-visual">
+              <div class="chef-circle">
+                <img
+                  src="images/chef-marco.png"
+                  alt="Chef Marco Rivera in white uniform presenting a fresh gourmet dish"
+                  class="chef-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SERVICES SECTION ===================== -->
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="container">
+
+          <div class="section-header">
+            <h2 class="section-title" id="services-title">What We Offer</h2>
+            <p class="section-subtitle">
+              Beyond great food, we deliver experiences. Explore the full range
+              of services designed to make every visit — and every occasion —
+              truly memorable.
+            </p>
+          </div>
+
+          <div class="services-grid">
+
+            <!-- Service Card 1 — Dine In -->
+            <article class="service-card" tabindex="0">
+              <div class="service-img-wrap">
+                <img
+                  src="images/service-dine-in.png"
+                  alt="Elegant dine-in experience at Savoria with ambient lighting"
+                  class="service-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="service-body">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="service-name">Dine In</h3>
+                <p class="service-desc">
+                  Enjoy a relaxed, elegant dining experience in our beautifully
+                  designed restaurant. Perfect for date nights, family meals,
+                  and business lunches.
+                </p>
+                <a href="#contact" class="service-link">Reserve a Table <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Service Card 2 — Private Events -->
+            <article class="service-card" tabindex="0">
+              <div class="service-img-wrap">
+                <img
+                  src="images/service-private.png"
+                  alt="Private dining room set up for a special event at Savoria"
+                  class="service-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="service-body">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fas fa-glass-cheers"></i>
+                </div>
+                <h3 class="service-name">Private Events</h3>
+                <p class="service-desc">
+                  Host your celebrations with us — birthdays, anniversaries,
+                  corporate dinners. Our private dining room seats up to 40
+                  guests with a fully customizable menu.
+                </p>
+                <a href="#contact" class="service-link">Plan Your Event <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Service Card 3 — Catering -->
+            <article class="service-card" tabindex="0">
+              <div class="service-img-wrap">
+                <img
+                  src="images/service-catering.png"
+                  alt="Savoria catering setup with beautifully arranged food platters"
+                  class="service-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="service-body">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fas fa-concierge-bell"></i>
+                </div>
+                <h3 class="service-name">Catering Services</h3>
+                <p class="service-desc">
+                  Bring the Savoria experience to your venue. Our professional
+                  catering team handles everything — setup, service, and
+                  cleanup — for events of any size.
+                </p>
+                <a href="#contact" class="service-link">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Service Card 4 — Food Delivery -->
+            <article class="service-card" tabindex="0">
+              <div class="service-img-wrap">
+                <img
+                  src="images/service-delivery.png"
+                  alt="Savoria food delivery with fresh packaged meals"
+                  class="service-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="service-body">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fas fa-motorcycle"></i>
+                </div>
+                <h3 class="service-name">Home Delivery</h3>
+                <p class="service-desc">
+                  Craving Savoria at home? We deliver fresh, chef-prepared
+                  meals right to your door. Order online and enjoy restaurant-
+                  quality food wherever you are.
+                </p>
+                <a href="#contact" class="service-link">Order Now <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+          </div><!-- /services-grid -->
+        </div>
+      </section>
+
+      <!-- ===================== TESTIMONIALS ===================== -->
+      <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+
+          <div class="section-header">
+            <h2 class="section-title" id="testimonials-title">What Our Guests Say</h2>
+            <p class="section-subtitle">
+              Real stories from real guests — hear why thousands choose
+              Savoria for their most special moments.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+
+            <!-- Review 1 -->
+            <article class="testimonial-card" tabindex="0">
+              <div class="testimonial-avatar">
+                <img
+                  src="images/review-emily.png"
+                  alt="Portrait of Emily Carter"
+                  loading="lazy"
+                />
+              </div>
+              <div class="stars" aria-label="Rating: 5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote class="testimonial-text">
+                "Savoria completely redefined fine dining for me. The seared
+                salmon melted in my mouth, the ambiance was stunning, and
+                the staff made us feel like family. We will absolutely be
+                coming back for every special occasion."
+              </blockquote>
+              <footer class="testimonial-author">
+                <strong>Emily Carter</strong>
+                <span>Food Blogger &amp; Critic</span>
+              </footer>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="testimonial-card" tabindex="0">
+              <div class="testimonial-avatar">
+                <img
+                  src="images/review-james.png"
+                  alt="Portrait of James Okafor"
+                  loading="lazy"
+                />
+              </div>
+              <div class="stars" aria-label="Rating: 5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote class="testimonial-text">
+                "I booked Savoria for my anniversary dinner and it was
+                beyond perfect. Chef Marco's tasting menu was an absolute
+                journey of flavors. Every single dish was beautifully
+                presented and incredibly delicious."
+              </blockquote>
+              <footer class="testimonial-author">
+                <strong>James Okafor</strong>
+                <span>Business Executive</span>
+              </footer>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="testimonial-card" tabindex="0">
+              <div class="testimonial-avatar">
+                <img
+                  src="images/review-sofia.png"
+                  alt="Portrait of Sofia Ramirez"
+                  loading="lazy"
+                />
+              </div>
+              <div class="stars" aria-label="Rating: 5 out of 5 stars">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </div>
+              <blockquote class="testimonial-text">
+                "The spicy tofu stir-fry is hands down the best vegetarian
+                dish I've ever had. Savoria proves that plant-based meals
+                can be just as exciting and satisfying as anything else on
+                the menu. Truly outstanding."
+              </blockquote>
+              <footer class="testimonial-author">
+                <strong>Sofia Ramirez</strong>
+                <span>Wellness Coach &amp; Author</span>
+              </footer>
+            </article>
+
+          </div><!-- /testimonials-grid -->
+
+          <!-- Decorative slider dots -->
+          <div class="slider-dots" role="group" aria-label="Testimonial page indicators">
+            <span class="dot"        aria-hidden="true"></span>
+            <span class="dot active" aria-hidden="true"></span>
+            <span class="dot"        aria-hidden="true"></span>
+            <span class="dot"        aria-hidden="true"></span>
+            <span class="dot"        aria-hidden="true"></span>
+            <span class="dot"        aria-hidden="true"></span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===================== NEWSLETTER / CONTACT ===================== -->
+      <section class="newsletter" id="contact" aria-labelledby="newsletter-title">
+        <div class="container">
+          <div class="newsletter-card">
+            <div class="newsletter-overlay" aria-hidden="true"></div>
+            <div class="newsletter-content">
+              <h2 class="newsletter-title" id="newsletter-title">
+                Get Exclusive Deals &amp; Promo Codes<br />
+                by Joining Our Newsletter
+              </h2>
+              <p class="newsletter-sub">
+                Subscribe now and be the first to hear about seasonal menus,
+                special events, and members-only discounts.
+              </p>
+              <form class="newsletter-form" action="#" method="post" aria-label="Newsletter subscription form" novalidate>
+                <div class="form-row">
+                  <label for="email-sub" class="visually-hidden">Your email address</label>
+                  <input
+                    type="email"
+                    id="email-sub"
+                    name="email"
+                    class="form-input"
+                    placeholder="Enter your email address"
+                    required
+                    autocomplete="email"
+                    aria-required="true"
+                  />
+                  <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" id="gallery" aria-label="Site footer">
+      <div class="container">
+
+        <div class="footer-grid">
+
+          <!-- Brand + opening hours -->
+          <div class="footer-brand">
+            <div class="nav-logo footer-logo">
+              <div class="logo-icon" aria-hidden="true">
+                <svg width="36" height="32" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="13" cy="22" rx="11" ry="11" fill="#E8792A"/>
+                  <ellipse cx="27" cy="22" rx="11" ry="11" fill="#E8792A" opacity="0.65"/>
+                  <circle cx="20" cy="10" r="6" fill="#E8792A" opacity="0.85"/>
+                </svg>
+              </div>
+              <span class="logo-text">Savoria</span>
+            </div>
+
+            <p class="footer-desc">
+              Savoria is a passionate celebration of food, culture, and
+              community. Every dish we serve is a labor of love.
+              <a href="#about" class="footer-link-inline">Learn more</a>
+            </p>
+
+            <address class="footer-address">
+              <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 24 Harbor Lane, Downtown, NY 10001</p>
+              <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+12125550193" class="footer-link">(212) 555-0193</a></p>
+              <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@savoria.com" class="footer-link">hello@savoria.com</a></p>
+            </address>
+
+            <div class="opening-hours">
+              <h4 class="footer-col-title">OPENING HOURS</h4>
+              <div class="hours-grid">
+                <div>
+                  <p class="hours-day">Mon – Fri</p>
+                  <p class="hours-time">11:00 am – 10:00 pm</p>
+                </div>
+                <div>
+                  <p class="hours-day">Saturday</p>
+                  <p class="hours-time">10:00 am – 11:00 pm</p>
+                </div>
+                <div>
+                  <p class="hours-day">Sunday</p>
+                  <p class="hours-time">CLOSED</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick navigation -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">NAVIGATION</h4>
+            <ul class="footer-links" role="list">
+              <li><a href="#menu"         class="footer-link">Menu</a></li>
+              <li><a href="#about"        class="footer-link">About Us</a></li>
+              <li><a href="#services"     class="footer-link">Services</a></li>
+              <li><a href="#chef"         class="footer-link">Our Chef</a></li>
+              <li><a href="#testimonials" class="footer-link">Reviews</a></li>
+              <li><a href="#contact"      class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Popular dishes -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">POPULAR DISHES</h4>
+            <ul class="footer-links" role="list">
+              <li><a href="#menu" class="footer-link">Crispy Spring Rolls</a></li>
+              <li><a href="#menu" class="footer-link">Seared Salmon &amp; Greens</a></li>
+              <li><a href="#menu" class="footer-link">Spicy Tofu Stir-Fry</a></li>
+              <li><a href="#menu" class="footer-link">Egg &amp; Avocado Bowl</a></li>
+            </ul>
+          </div>
+
+          <!-- Social media -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">FOLLOW US</h4>
+            <p class="footer-social-text">
+              Stay connected for daily specials, behind-the-scenes moments,
+              and exclusive offers.
+            </p>
+            <div class="footer-social" aria-label="Social media links">
+              <a href="#" class="social-link social-link-sm" aria-label="Follow Savoria on Facebook" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link social-link-sm" aria-label="Follow Savoria on Instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link social-link-sm" aria-label="Follow Savoria on Twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /footer-grid -->
+
+        <!-- Footer bottom bar -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; 2024 Savoria Restaurant. All Rights Reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#header" class="back-to-top" aria-label="Back to top of page">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </a>
+
+  </body>
+</html>
