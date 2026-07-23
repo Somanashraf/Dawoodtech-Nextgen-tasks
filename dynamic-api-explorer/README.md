@@ -4,11 +4,11 @@ A fully client-side JavaScript application that queries **4 public REST APIs** i
 
 ## Live Demo
 
-> **[https://dynamic-api-explorer.vercel.app](https://dynamic-api-explorer.vercel.app)**
+https://dynamicapiexplorer.vercel.app/
 
 ## GitHub Repository
 
-> **[https://github.com/YOUR_USERNAME/dynamic-api-explorer](https://github.com/YOUR_USERNAME/dynamic-api-explorer)**
+https://github.com/Somanashraf/Dawoodtech-Nextgen-tasks/edit/main/dynamic-api-explorer/
 
 ---
 
