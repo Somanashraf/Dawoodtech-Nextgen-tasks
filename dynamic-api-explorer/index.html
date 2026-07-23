@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic API Explorer</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <i class="fa-solid fa-satellite-dish"></i>
+          <span>API Explorer</span>
+        </div>
+        <nav class="header__nav">
+          <button class="nav-btn active" data-api="countries">
+            <i class="fa-solid fa-earth-americas"></i> Countries
+          </button>
+          <button class="nav-btn" data-api="pokemon">
+            <i class="fa-solid fa-dragon"></i> Pokémon
+          </button>
+          <button class="nav-btn" data-api="jokes">
+            <i class="fa-solid fa-face-laugh-beam"></i> Jokes
+          </button>
+          <button class="nav-btn" data-api="quotes">
+            <i class="fa-solid fa-quote-left"></i> Quotes
+          </button>
+        </nav>
+        <div class="header__theme">
+          <button id="themeToggle" title="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Controls Bar -->
+      <section class="controls">
+        <div class="controls__search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+          <button id="clearSearch" title="Clear" style="display:none">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="controls__filters" id="filtersContainer">
+          <!-- Dynamic filters injected by JS -->
+        </div>
+        <div class="controls__sort">
+          <select id="sortSelect">
+            <option value="">Sort by...</option>
+          </select>
+          <select id="limitSelect">
+            <option value="12">12 / page</option>
+            <option value="24">24 / page</option>
+            <option value="48">48 / page</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <span id="statsText">Loading...</span>
+        <div class="stats-bar__actions">
+          <button id="viewGrid" class="view-btn active" title="Grid view">
+            <i class="fa-solid fa-grip"></i>
+          </button>
+          <button id="viewList" class="view-btn" title="List view">
+            <i class="fa-solid fa-list"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Error Boundary -->
+      <div class="error-boundary hidden" id="errorBoundary">
+        <div class="error-boundary__inner">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <h3 id="errorTitle">Something went wrong</h3>
+          <p id="errorMessage">An unexpected error occurred.</p>
+          <div class="error-boundary__actions">
+            <button id="retryBtn" class="btn btn--primary">
+              <i class="fa-solid fa-rotate-right"></i> Retry
+            </button>
+            <button id="errorDismiss" class="btn btn--ghost">Dismiss</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading Skeleton -->
+      <div class="skeleton-grid hidden" id="skeletonGrid">
+        <!-- Injected dynamically -->
+      </div>
+
+      <!-- Results Grid -->
+      <div class="results-grid" id="resultsGrid" data-view="grid">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state hidden" id="emptyState">
+        <i class="fa-solid fa-inbox"></i>
+        <h3>No results found</h3>
+        <p id="emptyMessage">Try adjusting your search or filters.</p>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination" id="pagination" aria-label="Results pagination">
+        <!-- Injected by JS -->
+      </nav>
+    </main>
+
+    <!-- Detail Modal -->
+    <div class="modal-overlay hidden" id="modalOverlay" role="dialog" aria-modal="true">
+      <div class="modal" id="modal">
+        <button class="modal__close" id="modalClose" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal__content" id="modalContent">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
